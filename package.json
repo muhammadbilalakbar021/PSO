@@ -1,0 +1,35 @@
+{
+  "name": "PSO_Electron",
+  "version": "1.0.0",
+  "description": "Simple Node.js Desktop Application Template using Electron and Bootstrap",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "repository": "https://github.com/muhammadbilalakbar021",
+  "keywords": [
+    "Electron",
+    "Node",
+    "Template",
+    "Hackathon"
+  ],
+  "author": " Fahad Tanveer, Bilal Akbar",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "5.0.2",
+    "docxtemplater": "^3.22.5",
+    "express": "^4.17.1",
+    "jquery": "3.6.0",
+    "mdbootstrap": "4.19.2",
+    "pizzip": "^3.0.6",
+    "ejs": "^3.1.6",
+    "nodemon": "^2.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "2.27.5",
+    "electron": "^13.1.7",
+    "gulp": "4.0.2"
+  }
+}
