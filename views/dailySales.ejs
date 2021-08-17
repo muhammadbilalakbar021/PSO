@@ -98,10 +98,11 @@
                     <a href="/dailySalesHistory"><button class="View">View History</button></a>
 
                     <div class="row1">
+                        <form action="/dailySales" method="POST">
                         <div class="row1" style="width: 1080px;">
                             <div class="input mt-2">
                                 <label class="Sales" style="width: 20%;" for="">Date:</label>
-                                <input type="date">
+                                <input type="date" id="Date" name="date">
                             </div>
 
                             <div class="input mt-2">
@@ -124,8 +125,7 @@
                                 <br>
                                 <div class="input">
                                     <label class="Sales" style="width: 20%;" for="">Nozzle:</label>
-                                    <select style="width: 190px;">
-
+                                    <select style="width: 190px;" id="nozzle" name="nozzle">
                                         <option value="1">Select</option>
                                         <option id="petrol" value="2">Nozzle 1</option>
                                         <option value="3">Nozzle 1</option>
@@ -417,11 +417,11 @@
 
                                 </div>
                             </div>
-                            <button class="btn col-sm-5 btn-success btn-lg mt-3 ml-0 but">Save</button>
-
+                            <button class="btn col-sm-5 btn-success btn-lg mt-3 ml-0 but" type=submit>Save</button>
+                            
                         </div>
 
-
+                        </form>
 
                     </div>
 

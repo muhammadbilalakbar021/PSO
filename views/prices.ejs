@@ -88,7 +88,7 @@
             <div>
                 <div class="form-group col-md-12">
                     <a class="back" href="/home"> <button style="margin-left: -30px;"
-                        class="btn btn-success">back</button></a>
+                            class="btn btn-success">back</button></a>
                     <span class="title">Prices</span>
                     <br><br>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="row1">
 
 
-                    <form>
+                    <form action="/prices" method="POST">
                         <div class="form-group row mt-2">
                             <label for="Date" class="col-sm-5 col-form-label formData">Date</label>
                             <div class="col-sm-7">
@@ -108,29 +108,26 @@
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label formData">Petrol</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
+                                <input type="text" class="form-control formData" id="petrol" name="petrol">
                             </div>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label formData">Diesel</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
+                                <input type="text" class="form-control formData" id="diesel" name="diesel">
                             </div>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label formData">Oil</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
-                                <button class="btn btn-success btn-lg mt-3 ml-0 but">Save</button>
+                                <input type="text" class="form-control formData" id="oil" name="oil">
+                                <button class="btn btn-success btn-lg mt-3 ml-0 but" type=submit>Save</button>
                             </div>
-
                         </div>
-
                     </form>
                 </div>
-
         </main>
 
         <!-- page-content" -->
