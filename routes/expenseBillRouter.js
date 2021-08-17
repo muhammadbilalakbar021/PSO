@@ -6,4 +6,9 @@ router.get("/", async (req, res) => {
   res.render("expenseBill.ejs");
 });
 
+router.post("/", (req, res) =>{
+  console.log(req.body)
+  res.render("expense.ejs");
+});
+
 module.exports = router;

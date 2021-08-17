@@ -97,31 +97,31 @@
             </div>
             <div class="container d-flex p-2 justify-content-center">
                 <div class="row1 ">
-                    <form>
+                    <form action="/registerClient" method="POST">
                         <div class="form-group row mt-2">
                             <label class="col-sm-5 col-form-label formData">Client ID</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
+                                <input type="text" class="form-control formData" id="clientId" name="clientId">
                             </div>
                         </div>
 
                         <div class="form-group row mt-2">
                             <label class="col-sm-5 col-form-label formData">Client Name</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
+                                <input type="text" class="form-control formData" id="clientName" name="clientName">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
                             <label class="col-sm-5 col-form-label formData">Contact No</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
+                                <input type="text" class="form-control formData" id="contactNo" name="contactNo">
                             </div>
                         </div>
                         <div class="form-group row mt-2">
                             <label class="col-sm-5 col-form-label formData">Address</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control formData">
-                                <button class="btn btn-success btn-lg mt-3 ml-0 but">Add</button>
+                                <input type="text" class="form-control formData" id="address" name="address">
+                                <button class="btn btn-success btn-lg mt-3 ml-0 but" type="submit">Add</button>
                             </div>
                         </div>
 

@@ -97,11 +97,11 @@
                 <div class="row">
 
                     <div class="row1 ">
-                        <form>
+                        <form action="/expenseBill" method="POST">
                             <div class="form-group row mt-2">
                                 <label for="inputPassword" class="col-sm-5 col-form-label formData">Bill Name</label>
                                 <div class="col-sm-7">
-                                    <select class="form-select mt-2 form" aria-label="Default select example">
+                                    <select class="form-select mt-2 form" aria-label="Default select example" id="billName" name="billName">
                                         <option selected>Bill name</option>
                                         <option value="1">Electricity</option>
                                         <option value="2">Gas</option>
@@ -111,17 +111,11 @@
                                 </div>
 
                             </div>
-                            <div class="form-group row mt-2">
-                                <label for="Date" class="col-sm-5 col-form-label formData">Date</label>
-                                <div class="col-sm-7">
-                                    <input type="date" class="form-control formData" id="Date" name="date">
-                                </div>
-                            </div>
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-5 col-form-label formData">Month</label>
                                 <div class="col-sm-7">
-                                    <select class="form-select mt-2 form" aria-label="Default select example">
-                                        <option selected>All Month</option>
+                                    <select class="form-select mt-2 form" aria-label="Default select example" id="month" name="month">
+                                        <option selected>Choose Month</option>
                                         <option value="1">Jan</option>
                                         <option value="2">Feb</option>
                                         <option value="3">Mar</option>
@@ -140,8 +134,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-5 col-form-label formData">Amount</label>
                                 <div class="col-sm-7">
-                                    <input type="number" class="form-control formData">
-                                    <button class="btn btn-success btn-lg mt-3 ml-0 dropBut">Search</button>
+                                    <input type="number" class="form-control formData" id="amount" name="amount">
+                                    <button class="btn btn-success btn-lg mt-3 ml-0 dropBut" type=submit>Save</button>
                                 </div>
 
                             </div>
