@@ -9,11 +9,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS\creditSales.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="CSS\home.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -86,73 +86,44 @@
 
         <main class="page-content">
             <div>
-                <div class="form-group col-md-12 text-center">
-                    <span class="title">Daily Records</span>
+                <div class="form-group col-md-12">
+                    <button style="margin-left: -30px;" class="btn btn-success"><a class="back"
+                            href="/home">back</a></button>
+                    <span class="title">Register Client</span>
+                    <br><br>
                 </div>
             </div>
-            <div class="container d-flex p-2 justify-content-center ml-0">
-                <div class="col-md-7">
-                <form>
-                    <div class="form-group row mt-2">
-                        <label for="Date" class="col-sm-5 col-form-label formData">Date</label>
-                        <div class="col-sm-7">
-                            <input type="date" class="form-control formData" id="Date" name="date">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-5 col-form-label formData">Daily Sales</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control formData" id="inputPassword">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-5 col-form-label formData">Credit Sales</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control formData" id="inputPassword">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-5 col-form-label formData">Cash in Hands</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control formData" id="inputPassword">
-                        </div>
-                    </div>
-                </form>
-                <a class="back mt-5" href="/login"> <button 
-                    class="btn btn-success">Logout</button></a>
-        </div>
-
-        <div class="col-md-5 today">
-            <h3 class="price m-3">Today's Price List</h3>
-            <form>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-5 col-form-label formData">Petrol</label>
-                <div class="col-sm-7">
-                    <input placeholder="113/ltr" type="text" class="form-control formData" id="inputPassword">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-5 col-form-label formData">Diesel</label>
-                <div class="col-sm-7">
-                    <input  placeholder="113/ltr" type="text" class="form-control formData" id="inputPassword">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-5 col-form-label formData">Oil</label>
-                <div class="col-sm-7">
-                    <input  placeholder="113/Quant" type="text" class="form-control formData" id="inputPassword">
-                </div>
-            </div>
-        </form>
-    <!-- page-content" -->
-    </div>  
+            <div class="container-fluid">
+                <div class="row">
 
 
+                    <div class="col-md-6 mt-5">
+                        <a href="/registerVehicle">
+                            <button class="btn btn-success btn-lg button">Register</button></a>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <a href="/addSales">
+                            <button class="btn btn-success btn-lg button">Add Sales</button></a>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <a href="/generateBill">
+                            <button class="btn btn-success btn-lg button">Generate Bill</button></a>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <a href="/creditSalesHistory">
+                            <button class="btn btn-success btn-lg button">History</button></a>
+                    </div>
+                    <div class="col-md-6 offset-3 mt-5">
+                        <a href="/account">
+                            <button class="btn btn-success btn-lg button">Accounts</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- page-content" -->
     </div>
-</main>
-
-</div>
-
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

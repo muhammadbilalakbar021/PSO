@@ -20,12 +20,13 @@
     "body-parser": "^1.19.0",
     "bootstrap": "5.0.2",
     "docxtemplater": "^3.22.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "jquery": "3.6.0",
     "mdbootstrap": "4.19.2",
-    "pizzip": "^3.0.6",
-    "ejs": "^3.1.6",
-    "nodemon": "^2.0.0"
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.0",
+    "pizzip": "^3.0.6"
   },
   "devDependencies": {
     "browser-sync": "2.27.5",

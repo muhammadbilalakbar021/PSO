@@ -1,9 +1,9 @@
 var express = require("express");
 var router = express.Router();
 
-// Get Home  Page
+// Get Expense Page
 router.get("/", async (req, res) => {
-  res.render("Home.ejs");
+  res.render("expenseBill.ejs");
 });
 
 module.exports = router;

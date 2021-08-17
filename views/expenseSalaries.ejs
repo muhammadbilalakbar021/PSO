@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PSO</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="CSS\bill.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+
+</head>
+
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content leftPane">
+                <div id="toggle-sidebar">
+
+                </div>
+                <div class="sidebar-brand">
+                    <a href="/home" class="txt">Empress Filling Station</a>
+                </div>
+                <div class="sidebar-header">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="../Assets/home1.png" alt="User picture">
+                    </div>
+
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="/purchase">
+                                <span class="txt">Purchases</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="/dailySales">
+                                <span class="txt">Daily Sales</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="/creditSales">
+                                <span class="txt">Credit Sales</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="/expense">
+                                <span class="txt">Expense</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="/profit">
+                                <span class="txt">Profit</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="/prices">
+                                <span class="txt">Prices</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <main class="page-content">
+            <div>
+                <div class="form-group col-md-12">
+                    <a class="back" href="/expense"><button style="margin-left: -30px;"
+                            class="btn btn-success">back</button></a>
+                    <span class="title">Add Salary</span>
+                    <br><br>
+                </div>
+            </div>
+            <div class="container d-flex p-2 justify-content-center">
+
+                <div class="row1">
+
+                    <form style="text-align: center;">
+                        <div class="form-group row ">
+                            <label for="inputPassword" class="col-sm-5 col-form-label formData">Name</label>
+                            <div class="col-sm-7">
+                                <select class="form-select mt-2 form" aria-label="Default select example">
+                                    <option selected>Employee name</option>
+                                    <option value="1">Ali</option>
+                                    <option value="2">Ahmed</option>
+                                    <option value="3">Abdullah</option>
+                                    <option value="3">Fahad</option>
+                                    <option value="4">Hannan</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label formData">Salary</label>
+                            <div class="col-sm-7">
+                                <input type="number" class="form-control formData">
+                            </div>
+
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="Date" class="col-sm-5 col-form-label formData">Date</label>
+                            <div class="col-sm-7">
+                                <input type="date" class="form-control formData" id="Date" name="date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-5 col-form-label formData">Month</label>
+                            <div class="col-sm-7">
+                                <select class="form-select mt-2 form" aria-label="Default select example">
+                                    <option selected>All Month</option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="3">Apr</option>
+                                    <option value="3">May</option>
+                                    <option value="3">Jun</option>
+                                    <option value="3">Jul</option>
+                                    <option value="3">Aug</option>
+                                    <option value="3">Sep</option>
+                                    <option value="3">Oct</option>
+                                    <option value="3">Nov</option>
+                                    <option value="3">Dec</option>
+                                </select>
+
+                            </div>
+
+
+                        </div>
+                        <div class="form-group row mt-2 ml-0 checkbox-card">
+                            <div class="form-check col-sm-2 justify-content-center ml-5 mt-2">
+                                <div>
+                                    <input type="checkbox" class="form-check-input checkme" name="box"
+                                        id="exampleCheck1">
+
+                                </div>
+                                <label class="form-check-label" for="exampleCheck1">Bonus</label>
+                            </div>
+                            <div class="row2 pl-1 checkbox-card">
+                                <input type="number" class="form-control formData box">
+                                <button class="btn btn-success btn-lg mt-3 ml-0 but">Paid</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <table class="table">
+                    <thead class="thead tabl">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Bonus</th>
+                            <th scope="col">Month</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ali</td>
+                            <td>15000</td>
+                            <td>7/04/2020</td>
+                            <td>10%</td>
+                            <td>Apr</td>
+                            <td><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Ahmed</td>
+                            <td>18000</td>
+                            <td>8/05/2020</td>
+                            <td>10%</td>
+                            <td>May</td>
+                            <td><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </main>
+
+        <!-- page-content" -->
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+
+<script>
+
+    $(function () {
+        $(".checkme").click(function (event) {
+            var x = this.is(":checked");
+            if (x == true) {
+                $(this).parents(".checkbox-card").find('.box').show();
+            }
+            else {
+                $(this).parents(".checkbox-card").find('.box').hide();
+            }
+        })
+    })
+
+</script>
+
+</html>
