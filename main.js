@@ -52,7 +52,7 @@ function createWindow() {
 
   // ipcCommunation
   ipcMain.on("FullScreen", (e, args) => {
-        mainWindow.maximize();
+    mainWindow.maximize();
     // e.sender.send(
     //   "channel1-response",
     //   'Message received on "channel1". Thank you!'
