@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 var app = express();
 
@@ -55,8 +55,7 @@ require("./startup/profitRoutes")(app);
 // Prices Routes
 require("./startup/pricesRoutes")(app);
 
-
-const server = app.listen(3000, () =>
+const server = app.listen(3009, () =>
   console.log(`Express server listening on port 3000`)
 );
 
