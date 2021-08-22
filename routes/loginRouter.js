@@ -3,16 +3,21 @@ var router = express.Router();
 
 // Get Log in
 router.get("/", async (req, res) => {
-  res.render("index.ejs");
+  try {
+    res.status(200).send("index.ejs");
+  } catch (error) {
+    res.status(400).send(error);
+  }
 });
 
 // Post  Password Check
 router.post("/", async (req, res) => {
   console.log(req.body.password);
-  // if (req.body.password === "123321") {
-    res.render("Home.ejs");
+  try {
+    res.status(200).send("Home.ejs");
+  } catch (error) {
+    res.status(400).send(error);
   }
-// }
-);
+});
 
 module.exports = router;

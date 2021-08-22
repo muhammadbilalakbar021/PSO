@@ -56,7 +56,7 @@ require("./startup/profitRoutes")(app);
 require("./startup/pricesRoutes")(app);
 
 const server = app.listen(3009, () =>
-  console.log(`Express server listening on port 3000`)
+  console.log(`Express server listening on port 3009`)
 );
 
 module.exports = app;

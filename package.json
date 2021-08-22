@@ -2,10 +2,10 @@
   "name": "PSO_Electron",
   "version": "1.0.0",
   "description": "Simple Node.js Desktop Application Template using Electron and Bootstrap",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
-    "start": "electron .",
-    "watch": "nodemon --exec electron ."
+    "start": "node app.js",
+    "watch": "nodemon app.js"
   },
   "repository": "https://github.com/muhammadbilalakbar021",
   "keywords": [
