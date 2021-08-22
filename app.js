@@ -55,8 +55,9 @@ require("./startup/profitRoutes")(app);
 // Prices Routes
 require("./startup/pricesRoutes")(app);
 
-const server = app.listen(3000, () =>
-  console.log(`Express server listening on port 3000`)
-);
+//EXPRESS Server with port & Ip_Address
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Express server listening on port ${port}`));
 
 module.exports = app;
